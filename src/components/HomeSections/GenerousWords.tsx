@@ -28,7 +28,7 @@ export default function GenerousWords() {
             alt="left arrow"
           />
         </button>
-        <div className=" justify-center flex overflow-hidden max-md:min-w-[0px] min-w-[936px] h-[255px] gap-[20px]">
+        <div className=" justify-center flex overflow-hidden   h-[255px] gap-[20px]">
           <Word message={words[currInd].message} name={words[currInd].name} />
           {window.innerWidth >= 768 && (
             <Word

@@ -4,7 +4,7 @@ import tyn from "../assets/Mask group 2.png";
 export default function Header() {
   return (
     <header>
-      <nav className=" flex gap-[30px]">
+      <nav className=" flex gap-[20px]">
         <a href="">Home</a>
         <a href="">Work</a>
         <a href="">Testimonials</a>

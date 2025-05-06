@@ -8,7 +8,7 @@ export default function Work({
   img: string;
 }) {
   return (
-    <section className="max-md:w-[350px] max-md:h-[300px] h-[400px] flex flex-col justify-center  items-center w-[1142px]  bg-[#FFF8F2] rounded-[24px]">
+    <section className="max-sm:w-[270px] max-md:w-[350px] max-md:h-[300px] h-[400px] flex flex-col justify-center  items-center w-[1142px]  bg-[#FFF8F2] rounded-[24px]">
       <div className=" max-md:gap-[10px] flex items-center justify-center gap-[106px] ">
         <div className="max-md:w-[100px] flex flex-col max-md:ml-[10px]  ml-[76px] w-[404px] ">
           <div>
