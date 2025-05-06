@@ -3,6 +3,10 @@
 
 body {
   background-color: #ffeed9;
-  padding-left: 80px;
-  padding-top: 30px;
+}
+
+header {
+  padding-left: 112px;
+  padding-top: 80px;
+  padding-right: 112px;
 }
