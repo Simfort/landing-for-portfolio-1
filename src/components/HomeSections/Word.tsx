@@ -6,7 +6,7 @@ export default function Word({
   name: string;
 }) {
   return (
-    <div className="text-center max-md:w-[100px] w-[391px] h-[210px]">
+    <div className="text-center max-md:w-[300px] w-[391px] h-[210px]">
       <blockquote>{message}</blockquote>
       <p className="h-[25px]  font-bold text-center">{name}</p>
     </div>
