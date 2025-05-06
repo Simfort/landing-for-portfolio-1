@@ -6,15 +6,16 @@ import { words } from "./words";
 
 export default function GenerousWords() {
   const [currInd, setCurrInd] = useState(0);
+  const opt1 = window.innerWidth >= 768 ? words.length - 2 : words.length - 1;
   return (
-    <section className="flex max-md:w-[1000px] w-max h-[583px] items-center flex-col   p-[128px]">
-      <h2 className="text-[40px] font-[Eczar,serif] font-bold">
+    <section className="flex   h-[583px] items-center flex-col  w-1/1 max-md:p-[50px] p-[128px]">
+      <h2 className="max-md:text-[30px] text-[40px] font-[Eczar,serif] font-bold">
         Some Generous Words
       </h2>
       <p className="text-[20px]">
         Some of my favorite testimonials from my clients
       </p>
-      <div className="flex mt-[96px] gap-[94px]">
+      <div className="flex mt-[96px] max-md:gap-[10px] gap-[94px]">
         <button disabled={currInd == 0 ? true : false}>
           <img
             className={currInd == 0 ? "opacity-40" : ""}
@@ -27,16 +28,18 @@ export default function GenerousWords() {
             alt="left arrow"
           />
         </button>
-        <div className=" justify-center flex overflow-hidden min-w-[936px] h-[255px] gap-[20px]">
+        <div className=" justify-center flex overflow-hidden max-md:min-w-[0px] min-w-[936px] h-[255px] gap-[20px]">
           <Word message={words[currInd].message} name={words[currInd].name} />
-          <Word
-            message={words[currInd + 1].message}
-            name={words[currInd + 1].name}
-          />
+          {window.innerWidth >= 768 && (
+            <Word
+              message={words[currInd + 1].message}
+              name={words[currInd + 1].name}
+            />
+          )}
         </div>
-        <button disabled={currInd == words.length - 2 ? true : false}>
+        <button disabled={currInd == opt1 ? true : false}>
           <img
-            className={currInd == words.length - 2 ? "opacity-40" : ""}
+            className={currInd == opt1 ? "opacity-40" : ""}
             onClick={() =>
               setCurrInd((prevInd) => {
                 return prevInd + 1;

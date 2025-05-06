@@ -2,6 +2,8 @@
 @import "tailwindcss";
 
 body {
+  width: 100%;
+
   background-color: #ffeed9;
 }
 
@@ -9,4 +11,9 @@ header {
   padding-left: 112px;
   padding-top: 80px;
   padding-right: 112px;
+}
+@media (width < 48rem /* 768px */) {
+  header {
+    padding-left: 50px;
+  }
 }
